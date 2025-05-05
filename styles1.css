@@ -1,0 +1,176 @@
+
+
+
+  
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .gallery-item {
+    background-color: #1b1b1b;
+    border: 1px solid #3f8a7c;
+    padding: 10px;
+    border-radius: 10px;
+    color: #d7fef5;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .gallery-item figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #abf0d0;
+    font-family: 'Book Antiqua', serif;
+    font-size: 1rem;
+    text-align: center;
+  }
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Papyrus;
+  
+    background-color: #060007;
+    color: #d7fef5;
+    text-align: center;
+    line-height: 1.6;
+    position: relative; 
+    height: 100vh; 
+  }
+  .flicker {
+    animation: flicker 2s infinite;
+  }
+  
+  @keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      opacity: 1;
+    }
+    20%, 24%, 55% {
+      opacity: 0.5;
+    }
+  }
+  .highlighted-text{
+    color:rgb(144, 180, 108);
+  }
+  
+  .container {
+    padding-top: 20px;
+    position: relative; 
+  }
+  
+  h1 {
+    font-family: 'Book Antiqua', serif;
+    font-size: 4rem;
+    color: #6d5b80;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-family: 'Book Antiqua', serif;
+    font-size: 2rem;
+    color: #3f8a7c;
+    margin-bottom: 20px;
+  }
+  
+  .intro-text {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #d7fef5;
+  }
+  
+  .highlighted{
+    font-size: 1.9rem;
+    text-shadow: 0px 0px 10px #3f8a7c;
+    
+    color:#3f8a7c;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    position: relative; /
+  }
+  /* Ribbon Styles */
+  .ribbon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9); 
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(244, 156, 235, 0.5); 
+    display: flex;
+    justify-content: space-between; /* 🔥 this is the key */
+    align-items: center;
+  }
+  
+  .ribbon-left,
+  .ribbon-right {
+    display: flex;
+    gap: 20px;
+  }
+  
+  
+  .ribbon-button {
+    color: #abf0d0; 
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Book Antiqua', serif;
+    transition: color 0.3s ease;
+  }
+  
+  .ribbon-button:hover {
+    color: #d7fef5; 
+  }
+  
+  
+  .container {
+    padding-top: 80px; /
+  }
+  .counter {
+    font-family: papyrus;
+    font-size: 2rem;
+    color: #3f8a7c;
+    margin-bottom: px;
+  }
+  .quote{
+    font-family: papyrus;
+    font-size: 2rem;
+    color: #6d5b80;
+    margin-bottom: px;
+  }
+  
+  
+  #days-counter {
+    font-size: 3rem;
+    color: #6d5b80;
+    font-weight: bold;
+  }
+  
+  #my-name {
+    font-size: 1rem;
+    color: #3f8a7c;
+    font-weight: bold;
+    font-family: Papyrus;
+  }
+  
+  
+  
+  
+ 
+    

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Haunted Forest</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Book+Antiqua&family=Goudy+Old+Style&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="ribbon">
+    <div class="ribbon-left">
+      <a href="#top" class="ribbon-button">Home</a>
+      <a href="#contact" class="ribbon-button">Contact</a>
+    </div>
+    <div class="ribbon-right">
+      <a href="#" class="ribbon-button" onclick="playMusic()">▶ Play Background Music</a>
+      <a href="#" class="ribbon-button" onclick="pauseMusic()">⏸ Pause</a>
+    </div>
+  
+    <audio id="background-music" loop>
+      <source src="Taylor Swift  mad woman (Official Lyric Video).mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  
+    <script>
+      function playMusic() {
+        const music = document.getElementById("background-music");
+        music.play();
+      }
+  
+      function pauseMusic() {
+        const music = document.getElementById("background-music");
+        music.pause();
+      }
+    </script>
+  </div>
+
+  <div class="ghost-overlay"></div>
+
+
+  <div class="container">
+    <!-- Main Title -->
+    <h1 id="top" class="flicker" >The Haunted Forest</h1>
+    <!-- Subheading -->
+    <h2 class = "smoke">Remembering the Salem Witch Trials</h2>
+    <!-- Introductory Text -->
+    <p class="intro-text">
+      What if this was 1692—Salem? What if fear and hysteria is going to lead to the execution of 20 innocent people? What if I told you... it did.<br>
+      Things happened to the women of Salem. The witches of Salem are here to narrate them.<br>
+      <br> Welcome to the Haunted Forest.</p> 
+      <p class="highlighted">
+        <span class="highlighted-text"> Click on any of these mystical trees, </span> and they shall reveal. <br>
+      What began falsely with two teen girls became a nightmare too real.
+    </p>
+    <!-- Image Map -->
+    <img src="forest.png" usemap="#image-map" style="width: 90%; max-width: 750px; height: auto;" id="forest-image">
+
+    <map name="image-map">
+        <area alt="witch1" title="witch1" coords="106,399,408,1563"  shape="rect" onclick="navigateTo('witch1.html')">
+        <area alt="witch2" title="witch2" coords="444,681,644,1448" shape="rect" onclick="navigateTo('witch2.html')">
+        <area alt="witch3" title="witch3" coords="747,454,1164,1625" shape="rect" onclick="navigateTo('witch3.html')">
+        <area alt="witch4" title="witch4" coords="1245,559,1509,1528"  shape="rect" onclick="navigateTo('witch4.html')">
+        <area alt="witch5" title="witch5" coords="1620,668,1830,1408"  shape="rect" onclick="navigateTo('witch5.html')">
+    </map>
+    
+    <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+    <script>
+      window.onload = function() {
+        imageMapResize();
+      }
+    
+      function navigateTo(url) {
+        window.location.href = url;
+      }
+    </script>
+    
+    
+
+   
+    
+
+
+
+    <!-- Counter -->
+    <div class="counter">
+      <span class="counter-text">Witches don’t age, but it has been</span>
+      <span id="days-counter" class="flicker">333</span>
+      <span class="counter-text">years since the Salem Witch Trials.</span>
+    </div>
+    <section class="hall-link">
+      <a href="witch-gallery.html" class="hall-button">Some more scenes</a>
+    </section>
+    
+    <span class="quote">To burn the witch is to admit that magic exists.<span class="quote">
+    
+
+    <!-- Footer -->
+    <footer id="contact">
+      <p>A tribute to the witches, by their distant kin: 
+        <span id="my-name">Diya</span>
+      <p>Contact: <a href="mailto:youremail@example.com">diya.hooda@myy.haaga-helia.fi</a></p>
+    </footer>
+  </div>
+
+  <script>
+    function navigateTo(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>

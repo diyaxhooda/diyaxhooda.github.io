@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #e0d6f5;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 1.6;
+    position: relative;
+  }
+  
+  /* Back Button */
+  .back-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #e0d6f5;
+    background-color: #2d2d2d;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-family: 'Cinzel Decorative', cursive;
+  }
+  
+  .back-link:hover {
+    background-color: #4a4a4a;
+  }
+  
+  /* Layout */
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 50px;
+    gap: 50px;
+  }
+  
+  .witch-info {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .witch-info h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #f5ebff;
+    text-shadow: 0 0 10px #912e94;
+  }
+  
+  .witch-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #d3a5eb;
+  }
+  
+  .witch-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #cda4dd;
+  }
+  
+  .witch-info p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  
+  .quote {
+    font-style: italic;
+    color: #aaa;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    border-left: 2px solid #555;
+    text-shadow: 0 0 5px #501350;
+  }
+  
+  a {
+    color: #c182d1;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Image Section */
+  .witch-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .witch-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #591b5c;
+  }
+  
